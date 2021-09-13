@@ -41,68 +41,73 @@
     </div>
 
     <!-------------- display detail  ----------------->
-    <div>
+    <div class="mb-5">
       <div id="display-detail">
 
       </div>
     </div>
-    
-
 
     <!--------------- display cards ------------------>
-    <div class="row">
-      <div class="col-md-9 col-lg-9 col-sm-7">
-        <div id="all-products" class="">
-        </div>
-      </div>
-      <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
-        <div class="cart" id="my-cart">
-          <table class="table">
-            <thead>
-              <h1>My-Cart</h1>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Total Added-Products:</th>
-                <td><span id="total-Products">0</span></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Price:</th>
-                <td>$ <span id="price">0</span></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Delivery-Charge:</th>
-                <td>$ <span id="delivery-charge">20</span></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Total-Tax:</th>
-                <td>$ <span id="total-tax">0</span></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Total</th>
-                <td colspan="2">$ <span id="total">0</span></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="parces text-center">
-            <button class="btn  text-center" id="buy-btn">Buy Now</button>
+    <div class="row   row-cols-1 row-cols-md-2 g-2 ">
+      <div class="col col-md-8 col-lg-8">
+        <div class="card ">
+          <div id="single-product-card" class="row h-100 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 g-4 ">
+        
           </div>
         </div>
+      </div>
+      <div class="col col-md-4 col-lg-4">
+      <div class="card">
+        <div class="col  col-md-3 col-lg-3 col-sm-5 cart-main">
+          <div class="cart" id="my-cart">
+            <table class="table">
+              <thead>
+                <h1>My-Cart</h1>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Total Added-Products:</th>
+                  <td><span id="total-Products">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Price:</th>
+                  <td>$ <span id="price">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Delivery-Charge:</th>
+                  <td>$ <span id="delivery-charge">20</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Total-Tax:</th>
+                  <td>$ <span id="total-tax">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Total</th>
+                  <td colspan="2">$ <span id="total">0</span></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="parces text-center">
+              <button class="btn  text-center" id="buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </main>

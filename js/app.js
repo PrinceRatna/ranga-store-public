@@ -13,20 +13,26 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product">
+    div.innerHTML = ` <div class="col h-100">
+    <div class="card h-100 card-hover " id="card-color">
+      <div id="all-products h-100" >
+    <div class="single-product h-100 ">
       <div>
     <img class="product-image" src=${image}></img>
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
-      <p>Rating:${product.rating.rate}</P>
-      <p>Count:${product.rating.count}</P>
+      <h6><span class="rate-rateCount">Rating: </span>${product.rating.rate}<br>
+      <span class="rate-rateCount">Count: </span>${product.rating.count}</h6>
 
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger" onclick="detail(${product.id})">Details</button></div>
+      </div>
+      </div>
+      </div>
       `;
-    document.getElementById("all-products").appendChild(div);
+    document.getElementById("single-product-card").appendChild(div);
   }
 };
 // product detail by using id 
@@ -40,15 +46,16 @@ showDetail=(detail)=>{
     displayDetail.textContent='';
     const image = detail.image;
     const div = document.createElement("div");
-    div.classList.add("product-detail");
+    div.classList.add("detail-product");
     div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${image}></img>
       </div>
       <h3>${detail.title}</h3>
       <p>Category: ${detail.category}</p>
-      <p>Rating:${detail.rating.rate}</P>
-      <p>Count:${detail.rating.count}</P>
+      <p><span class="rate-rateCount">Details: ${detail.description}</span></p>
+      <h6> <span class="rate-rateCount">Rating: </span>${detail.rating.rate}<br>
+     <span class="rate-rateCount"> Count:</span> ${detail.rating.count}</h6>
 
       <h2>Price: $ ${detail.price}</h2>
       <button onclick="addToCart(${detail.id},${detail.price})" id="addToCart-btn" class="buy-now btn">add to cart</button>
