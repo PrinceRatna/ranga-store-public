@@ -13,7 +13,7 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
+  border: 1px solid rgb(144, 151, 151);
   width: 281px;
   border-radius: 5px;
   margin: auto;
@@ -24,6 +24,12 @@ body {
   padding: 10px 50px;
   border-radius: 25px;
   margin-left: 20px;
+}
+#search-btn{
+  background-color:rgb(144, 151, 151);
+  color:white;
+  font-weight: 500;
+  font-size:small;
 }
 #all-products{
   display: grid;
@@ -49,11 +55,29 @@ body {
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px ;
 }
 .product-image {
   width: 150px;
   height: 150px;
+}
+ #addToCart-btn {
+  background-color:rgb(144, 151, 151);
+  color:white;
+  font-weight: 400;
+  font-size:small;
+}
+#details-btn{
+  background-color:rgb(144, 151, 151);
+  color:white;
+  font-weight: 400;
+  font-size:small;
+}
+#buy-btn{
+  background-color:rgb(144, 151, 151);
+  color:white;
+  font-weight: 500;
+  font-size:small;
 }
 .cart {
   width: 350px;

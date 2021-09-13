@@ -54,8 +54,8 @@ showDetail=(detail)=>{
       <p>Count:${detail.rating.count}</P>
 
       <h2>Price: $ ${detail.price}</h2>
-      <button onclick="addToCart(${detail.id},${detail.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger" onclick="detail(${detail.id})">Details</button></div>
+      <button onclick="addToCart(${detail.id},${detail.price})" id="addToCart-btn" class="buy-now btn">add to cart</button>
+      <button id="details-btn" class="btn" onclick="detail(${detail.id})">Details</button></div>
       `;
     displayDetail.appendChild(div);
 
