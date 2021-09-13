@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/*--------- input field  --------------*/
 .search-field {
   border: none;
   border-radius: 50px;
@@ -20,6 +21,7 @@ body {
   margin-top: 50px;
   border-right: none;
 }
+/*--------- search button  ----------------*/
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
@@ -61,24 +63,29 @@ body {
   width: 150px;
   height: 150px;
 }
+/*----------- button  -------------*/
  #addToCart-btn {
   background-color:rgb(144, 151, 151);
   color:white;
   font-weight: 400;
   font-size:small;
+  border: 0px;
 }
 #details-btn{
   background-color:rgb(144, 151, 151);
   color:white;
   font-weight: 400;
   font-size:small;
+  border: 0px;
 }
 #buy-btn{
   background-color:rgb(144, 151, 151);
   color:white;
   font-weight: 500;
   font-size:small;
+  border: 0px;
 }
+ /*---------- cart  ---------------*/
 .cart {
   width: 350px;
   /* border: 1px solid green; */

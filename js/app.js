@@ -8,11 +8,8 @@ loadProducts();
 
 // show all product in UI 
 const showProducts = (products) => {
-  //console.log(products);
   const allProducts = products.map((pd) => pd);
-  //console.log(allProducts);
   for (const product of allProducts) {
-    //console.log(product);
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
@@ -32,13 +29,13 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+// product detail by using id 
 detail=(detailId)=>{
   fetch(`https://fakestoreapi.com/products/${detailId}`)
             .then(res=>res.json())
             .then(json=>showDetail(json))
 }
 showDetail=(detail)=>{
- // console.log(detail);
     const displayDetail=document.getElementById('display-detail');
     displayDetail.textContent='';
     const image = detail.image;
@@ -61,6 +58,8 @@ showDetail=(detail)=>{
 
 
 }
+
+// counting product 
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
